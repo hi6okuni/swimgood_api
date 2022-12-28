@@ -9,6 +9,11 @@ services:
     tty: true
     ports:
       - 8081:8081
+    environment:
+      MYSQL_DATABASE: app
+      MYSQL_HOST: db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: users_db
     volumes:
       - .:/app
     depends_on:
@@ -25,12 +30,16 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: niku6ohi
       MYSQL_DATABASE: app
-      MYSQL_USER: app
-      MYSQL_PASSWORD: app
+      MYSQL_USER: root
+      MYSQL_PASSWORD: users_db
     volumes:
       - type: volume
         source: db
         target: /var/lib/mysql
+    networks:
+      - default
 
+networks:
+  default:
 volumes:
   db:
