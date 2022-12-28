@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/hi6okuni/go-auth-api/backend/domain/users"
-	"github.com/hi6okuni/go-auth-api/backend/utils/errors"
+	"github.com/hi6okuni/go-auth-api/domain/users"
+	"github.com/hi6okuni/go-auth-api/utils/errors"
 	"golang.org/x/crypto/bcrypt"
 )
 

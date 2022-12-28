@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/gin-contrib/cors"
-	"github.com/hi6okuni/go-auth-api/backend/controller/users"
+	"github.com/hi6okuni/go-auth-api/controller/users"
 )
 
 func mapUrls() {
