@@ -8,12 +8,7 @@ services:
       dockerfile: Dockerfile
     tty: true
     ports:
-      - 8081:8081
-    environment:
-      MYSQL_DATABASE: app
-      MYSQL_HOST: db
-      MYSQL_USER: root
-      MYSQL_PASSWORD: users_db
+      - "8081:8081"
     volumes:
       - .:/app
     depends_on:
@@ -21,25 +16,21 @@ services:
 
   db:
     image: mysql:5.7
-    # M!対応
+    # M1対応
     platform: linux/amd64
-    container_name: db
+    container_name: godockerDB
     tty: true
     ports:
-      - 3306:3306
+      - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: niku6ohi
-      MYSQL_DATABASE: app
-      MYSQL_USER: root
-      MYSQL_PASSWORD: users_db
+      MYSQL_USER: docker
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: godocker
     volumes:
       - type: volume
         source: db
         target: /var/lib/mysql
-    networks:
-      - default
 
-networks:
-  default:
 volumes:
   db:
