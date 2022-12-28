@@ -9,6 +9,11 @@ services:
     tty: true
     ports:
       - "8081:8081"
+    environment:
+      MYSQL_USER: docker
+      MYSQL_PASSWORD: password
+      MYSQL_HOST: godockerDB
+      MYSQL_DATABASE: godocker
     volumes:
       - .:/app
     depends_on:
