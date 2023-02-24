@@ -1,4 +1,4 @@
-module github.com/hi6okuni/go-auth-api
+module github.com/hi6okuni/swimgood_api
 
 go 1.19
 

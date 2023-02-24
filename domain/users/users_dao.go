@@ -3,8 +3,8 @@ package users
 import (
 	"log"
 
-	"github.com/hi6okuni/go-auth-api/datasource/mysql/users_db"
-	"github.com/hi6okuni/go-auth-api/utils/errors"
+	"github.com/hi6okuni/swimgood_api/datasource/mysql/users_db"
+	"github.com/hi6okuni/swimgood_api/utils/errors"
 )
 
 var (

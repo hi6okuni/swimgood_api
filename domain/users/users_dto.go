@@ -3,7 +3,7 @@ package users
 import (
 	"strings"
 
-	"github.com/hi6okuni/go-auth-api/utils/errors"
+	"github.com/hi6okuni/swimgood_api/utils/errors"
 )
 
 type User struct {

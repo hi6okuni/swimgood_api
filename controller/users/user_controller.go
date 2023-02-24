@@ -7,9 +7,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v4"
-	"github.com/hi6okuni/go-auth-api/domain/users"
-	"github.com/hi6okuni/go-auth-api/services"
-	"github.com/hi6okuni/go-auth-api/utils/errors"
+	"github.com/hi6okuni/swimgood_api/domain/users"
+	"github.com/hi6okuni/swimgood_api/services"
+	"github.com/hi6okuni/swimgood_api/utils/errors"
 )
 
 const (

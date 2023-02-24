@@ -3,10 +3,10 @@ version: "3.8"
 services:
   app:
     container_name: app
+    image: swimgood_api:latest
     build:
       context: .
-      dockerfile: Dockerfile_local
-    command: air -c .air.toml -d
+      dockerfile: Dockerfile
     tty: true
     ports:
       - "80:80"
