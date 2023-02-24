@@ -9,7 +9,7 @@ services:
     command: air -c .air.toml -d
     tty: true
     ports:
-      - "8081:8081"
+      - "80:80"
     environment:
       MYSQL_USER: docker
       MYSQL_PASSWORD: password
